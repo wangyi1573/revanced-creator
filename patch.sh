@@ -136,7 +136,7 @@ download_needed() {
 patch() {
     out "${BLUE}patching process started(${RED}$root_text${BLUE})${NC}"
     out "${BLUE}it may take a while please be patient${NC}"
-    base_cmd="java -jar -Xmx512m -Xms512m  $cli_filename patch $apk_filename \
+    base_cmd="java -jar -Xmx512m -Xms512m $cli_filename patch $apk_filename \
 		-o $output_apk \
   		-p \
 		-b $patches_filename"
