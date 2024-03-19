@@ -231,7 +231,7 @@ main() {
 		esac
 
 		addarg "--custom-aapt2-binary=./$aapt2_filename"
-		[ ! -f "$aapt2_filename" ] && aapt2_link="https://github.com/XDream8/revanced-creator/releases/download/other/$aapt2_filename"
+		[ ! -f "$aapt2_filename" ] && aapt2_link="https://github.com/wangyi1573/revanced-creator/releases/download/other/$aapt2_filename"
 	fi
 
 	## what should we patch
@@ -309,7 +309,7 @@ main() {
 	}
 
 	## link to download $what_to_patch
-	[ ! -f "$apk_filename" ] && apk_link=https://github.com/XDream8/revanced-creator/releases/download/$what_to_patch/$apk_filename
+	[ ! -f "$apk_filename" ] && apk_link=https://github.com/wangyi1573/revanced-creator/releases/download/$what_to_patch/$apk_filename
 
 	## remove old files with find
 	remove_old
