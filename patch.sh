@@ -123,7 +123,7 @@ get_and_print_versions() {
 }
 
 get_stock_apk_version() {
-	notset "$apk_version" && apk_version=$(curl -sL -H 'User-Agent: revanced-creator' "https://api.github.com/repos/XDream8/revanced-creator/releases" | sed 's/"name":"/\n/g; s/.apk",/\n/g' | $grep -ioe "^$what_to_patch-[0-9].*[0-9]" | $grep -oe "[0-9].*[0-9]" | awk 'END{print}')
+	notset "$apk_version" && apk_version=$(curl -sL -H 'User-Agent: revanced-creator' "https://api.github.com/repos/wangyi1573/revanced-creator/releases" | sed 's/"name":"/\n/g; s/.apk",/\n/g' | $grep -ioe "^$what_to_patch-[0-9].*[0-9]" | $grep -oe "[0-9].*[0-9]" | awk 'END{print}')
 	notset "$apk_version" && {
 		err "getting $what_to_patch apk version failed, exiting!"
 	}
